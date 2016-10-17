@@ -29,7 +29,7 @@ nav a, footer a{
 nav a:hover, footer a:hover{
   text-decoration: underline;
 }
-nav a:active, footer a:hover{
+nav a:active, footer a:active{
   text-decoration: underline;
 }
 .slider{
@@ -39,20 +39,8 @@ nav a:active, footer a:hover{
 .imglink:hover img{
   opacity: 0.5;
 }
-.desc{
-  position: relative;
-  top: 500px;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  z-index: 10;
-  background-color: white;
-  padding-bottom: 260px;
-}
-.desc h2{
-    padding-top: 110px;
-}
-.desc h2, .right h2, .goalsEduWork h2{
+
+h2{
   width: 200px;
   margin: auto;
   font-size: 30px;
@@ -72,63 +60,60 @@ nav a:active, footer a:hover{
 }
 
 .left{
+  position: relative;
   width: 60%;
   display: inline-block;
   float: left;
   background-color: #EBF8F9;
 }
 .right{
+  position: relative;
   height: 502px;
-  width: 40%;
+  width: 415px;
   display: inline-block;
   float: left;
   background-color: #EBF8F9;
 }
 .right h2{
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 .right p{
   text-align: center;
   padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.goalsEduWork{
-  position: relative;
-  top: 500px;
-  color: black;
-  width: 100%;
-  z-index: 10;
-  height: 100%;
-  background-color: white;
-}
-.goalsEduWork h2{
-  padding-top: 200px;
-}
-.goalsEduWork p{
-  padding: 40px 20px;
+  width: 80%;
+  margin: auto;
 }
 
 .oneThird, .twoThird, .threeThird{
+  position: relative;
+  top: 500px;
+  padding-top: 200px;
   width: 33.33%;
   display: inline-block;
   float: left;
   background-color: white;
-  padding-bottom: 200px;
+  padding-bottom: 40%;
+  z-index: 10;
 }
-.twoThird{
-  padding-bottom: 200px;
+
+.threeThird{
+  padding-bottom: 50%;
 }
+
+.oneThird p, .twoThird p, .threeThird p{
+  padding: 40px 20px;
+}
+
 .twoThird p{
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
 footer{
+  position: absolute;
   height: 60px;
   background-color: white;
-  position: relative;
-  top: 480px;
+  bottom: 0;
   padding-top: 40px;
   width: 100%;
 }
