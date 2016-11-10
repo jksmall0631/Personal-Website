@@ -46,6 +46,10 @@ nav a:active, footer a:active{
   position: fixed;
   top: 100px;
 }
+
+.slider img{
+}
+
 .imglink:hover img{
   opacity: 0.5;
 }
@@ -54,7 +58,7 @@ nav a:active, footer a:active{
 position: relative;
 top: 500px;
 background-color: white;
-height: 750px;
+height: 600px;
 }
 
 .desc h2{
@@ -63,13 +67,77 @@ height: 750px;
 
 .desc p{
   padding-bottom: 20px;
+  width: 600px;
+  margin: auto;
 }
+
 
 .bio{
   position: relative;
   top: 500px;
-  height: 500px;
-  background-color: black;
+  height: 550px;
+  background-color: #EBF8F9;
+}
+
+.left{
+  width: 60%;
+  height: 550px;
+  float: left;
+}
+
+.right{
+  width: 40%;
+  height: 550px;
+  float: right;
+  background-color: #EBF8F9;
+  top: 0;
+  bottom: 0;
+}
+
+.bio h2{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.bio p{
+padding: 10px 40px;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.threeSection{
+  position: relative;
+  top: 500px;
+  background-color: white;
+  padding: 200px 0;
+  display: flex;
+}
+
+.goals, .experience, .education{
+  display: inline-block;
+  width: 33.33%;
+  padding: 0 20px;
+}
+
+.threeSection p, li{
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.experience{
+  border-right: black 1px solid;
+  border-left:  black 1px solid;
+}
+
+
+footer{
+  position: relative;
+  top: 500px;
+  background-color: white;
+  height: 120px;
 }
 
 nav h2{
@@ -81,7 +149,36 @@ nav h2{
 nav ul{
   float: right;
 }
-footer nav{
-  width: 100%;
-  background-color: white;
+nav a:hover{
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 900px){
+  .left{
+    width: 100%;
+    height: 550px;
+  }
+
+  .right{
+    width: 100%;
+    height: 550px;
+    background-color: #EBF8F9;
+  }
+
+  .threeSection{
+    width: 100%;
+  }
+
+  .bio h2{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .center {
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+  }
+
 }
